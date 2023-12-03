@@ -4,6 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    /** @type {import('tailwindcss').Config} */
+    tailwind.config = {
+      theme: {
+        colors: {
+          transparent: 'transparent',
+          'lemon': '#85cc16',
+          'lemon-600': '#66a30d',
+          'grey': '#3f3f46',
+          'dark-grey': '#272729',
+        },
+      },
+    }
+    </script>
+
+    <style type="text/tailwindcss">
+    @layer utilities {
+      .text-white {
+        color: white;
+      }
+
+      .text-grey {
+        color: #3f3f46;
+      }
+      
+    }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-grey h-screen flex items-center justify-center">
+      <div class="bg-dark-grey rounded-xl flex items-center mx-auto px-2 py-2">
+        <img class="rounded-l-xl" width="200" src="./images/image.jpg" alt="A person is sprinkling salt into a bowl with soybeans.">
+        
+        <div class="w-4/5 p-10 ">
+          <div>
+            <p class="font-['Vollkorn'] text-3xl text-white font-medium">Get diet and fitness tips in your inbox</p>
+            <p class="text-sm pt-6 pb-6 w-4/5 text-white">Eat better and excercise better. Sign up for the Diet&Fitness newsletter.</p>
+          </div>
+          <div class="flex gap-3">
+            <input class="dark:text-white text-sm w-7/12 border-2 border-grey bg-transparent py-3 px-4 rounded" type="email" placeholder="Enter your email address">
+            <button class="text-sm text-grey py-3 px-5 border-2 border-lemon bg-lemon hover:bg-lemon-600 hover:border-lemon-600 rounded"><a href="#">Subscribe</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
