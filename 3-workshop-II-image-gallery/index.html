@@ -13,7 +13,6 @@
           colors: {
             transparent: 'transparent',
             'light-blue': '#e9fbfc',
-            'red': '#c05858',
             'black': '#000000',
             'white': '#ffffff',
             'gray-400': '#9ca3af',
@@ -32,15 +31,15 @@
       </style>
   </head>
   <body>
-      <div class="flex items-center justify-center bg-light-blue h-screen">
-        <div class="p-32 shadow-xl rounded-xl h-5/6 w-10/12 bg-white">
+      <div class="flex items-center justify-center bg-light-blue h-fit">
+        <div class="m-5 p-24 shadow-xl rounded-xl h-5/6 w-11/12 bg-white">
             <div class="pb-20 justify-end flex space-x-4">
               <a href="#" class="hover:bg-black hover:text-white rounded-md px-3 py-2 text-sm">Vector</a>
               <a href="#" class="hover:bg-black hover:text-white rounded-md px-3 py-2 text-sm">Illustrations</a>
               <a href="#" class="hover:bg-black hover:text-white rounded-md px-3 py-2 text-sm">Images</a>
               <a href="#" class="hover:bg-black hover:text-white rounded-md px-3 py-2 text-sm">Icons</a>
             </div>
-            <div class="pb-10 flex">
+            <div class="pb-8 flex">
               <div class="relative text-gray-600">
                 <input type="search" name="serch" placeholder="Search" class="w-80 shadow bg-white h-10 px-5 pr-10 text-sm focus:outline-none">
                 <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
@@ -50,18 +49,107 @@
                 </button>
               </div>
               <div class="flex justify-end flex-1">
-              <button class="shadow-xl rounded h-10 px-10 bg-black text-white">Upload</button>
+              <button class="shadow-xl rounded h-10 px-10 bg-black text-white"><a href="#">Upload</a></button>
               </div>
             </div>
 
-            <div class="box-content">
-              <div class="img"></div>
-              <div class="img"></div>
-              <div class="img"></div>
-              <div class="img"></div>
-              <div class="img"></div>
-              <div class="img"></div>
-            </div>    
+              <div class="container mx-auto">
+                <!-- Section: Image gallery -->
+                <section>
+                  <style>
+                    .zoom:hover img {
+                      transform: scale(1.1);
+                    }
+                  </style>
+
+                  <div class="grid gap-3 lg:grid-cols-3">
+                    <div
+                      class="zoom relative overflow-hidden"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      <img
+                        src="/3-workshop-II-image-gallery/images/image1.jpg"
+                        alt="The woman doing makeup."
+                        class="w-full align-middle transition duration-300 ease-linear" />
+                      <a href="#!">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:bg-[hsla(0,0%,99%,0.15)]"></div>
+                      </a>
+                    </div>
+
+                    <div
+                      class="zoom relative overflow-hidden"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      <img
+                        src="/3-workshop-II-image-gallery/images/image2.jpg"
+                        alt="There was an open window at the stairs going up."
+                        class="w-full align-middle transition duration-300 ease-linear" />
+                      <a href="#!">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:bg-[hsla(0,0%,99%,0.15)]"></div>
+                      </a>
+                    </div>
+
+                    <div
+                      class="zoom relative overflow-hidden"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      <img
+                        src="/3-workshop-II-image-gallery/images/image3.jpg"
+                        alt="Artistically photographed building corners."
+                        class="w-full align-middle transition duration-300 ease-linear" />
+                      <a href="#!">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:bg-[hsla(0,0%,99%,0.15)]"></div>
+                      </a>
+                    </div>
+
+                    <div
+                      class="zoom relative overflow-hidden"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      <img
+                        src="/3-workshop-II-image-gallery/images/image4.jpg"
+                        alt="Nature photography from above."
+                        class="w-full align-middle transition duration-300 ease-linear" />
+                      <a href="#!">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:bg-[hsla(0,0%,99%,0.15)]"></div>
+                      </a>
+                    </div>
+
+                    <div
+                      class="zoom relative overflow-hidden"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      <img
+                        src="/3-workshop-II-image-gallery/images/image5.jpg"
+                        alt="The buildings are in large cities."
+                        class="w-full align-middle transition duration-300 ease-linear" />
+                      <a href="#!">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:bg-[hsla(0,0%,99%,0.15)]"></div>
+                      </a>
+                    </div>
+
+                    <div
+                      class="zoom relative overflow-hidden"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      <img
+                        src="/3-workshop-II-image-gallery/images/image6.jpg"
+                        alt="Wooden door at the marble building."
+                        class="w-full align-middle transition duration-300 ease-linear" />
+                      <a href="#!">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:bg-[hsla(0,0%,99%,0.15)]"></div>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <!-- Section: Image gallery -->
+              </div>
         </div>
       </div>
   </body>
